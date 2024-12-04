@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Contact-Address Book</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Rob
+oto:wght@300;400;500;700&display=swap"
+rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Header Section-->
+    <header>
+        <h1>Address Book</h1>
+        <nav>
+            <button>Home</button>
+            <button>AddContact</button>
+            <button>ViewContact</button>
+        </nav>
+    </header>
+    <!--Main Content-->
+    <main>
+        <div class="form-container">
+            <h2>Add  New Contact</h2>
+            <form id="addContactForm">
+                <div class="form-group">
+                    <label for="firstName">FirstName:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">LastName:</label>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="notes">Notes:</label>
+                    <textarea id="notes" name="notes" rows="3"></textarea>
+                </div>
+                <div class="form-button">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Clear</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <!-- Footer Section -->
+<footer>
+    <p>Address Book. Copyright 2024</p>
+    </footer>
+</body>
+</html>

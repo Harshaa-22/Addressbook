@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Contact - Address Book</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Rob
+oto:wght@300;400;500;700&display=swap"
+rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Header Selection-->
+    <header>
+        <h1>Address Book</h1>
+        <nav>
+            <button>Home</button>
+            <button>AddContact</button>
+            <button>ViewContact</button>
+        </nav>
+    </header>
+    <!--Main Section-->
+    <main>
+        <h2>Edit Contact</h2>
+        <div class="form-container">
+            <form name="editContact" id="editContainerForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" requried placeholder="Enter name">
+
+                </div>
+                <div class="from-group">
+                    <label for="phone"></label>
+                    <input type="tel" id="phone" name="phone" required placeholder="Enter phone number">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <textarea id="address" name="address" rows="3" required palceholder="Enter address"></textarea>
+                </div>
+                <div class="form-button">
+                    <button type="submit">Save Changes</button>
+                    <button type="reset">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <!--Footer Selection-->
+    <fooeter>
+        <p>Address Book. Copyrigth 2024</p>
+    </fooeter>
+    <script>
+        // Function to populate form with existing contact data
+        function populateForm(contact) {
+        document.getElementById('name').value
+        = contact.name;
+        document.getElementById('phone').value
+        = contact.phone;
+        document.getElementById('email').value
+        = contact.email;
+        document.getElementById('address').value =
+        contact.address;
+        }
+        // Function to handle form submission
+        document.getElementById('editContactForm').addEven
+tListener('submit', function(e) {
+e.preventDefault();
+// Add your save logic here
+});
+</script>
+</body>
+</html>
+Add.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+<title>Add Contact - Address Book</title>
+<link
+href="https://fonts.googleapis.com/css2?family=Rob
+oto:wght@300;400;500;700&display=swap"
+rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Header Section -->
+<header>
+<h1>Address Book</h1>
+<nav>
+<button>Home</button>
+<button>AddContact</button>
+<button>ViewContacts</button>
+</nav>
+</header>
+</body>
+</html>
